@@ -32,7 +32,7 @@ public class ProyectoExists1 {
         col = DatabaseManager.getCollection(uri + coleccion, "admin", "oracle");
 
         //OJO, FIJARSE EN LO QUE DEVUELVEN LOS MÉTODOS:
-        //Listar las colecciones
+        //LISTAR LAS COLECCIONES
         String[] listChildCollections = col.listChildCollections();
 
         for (String z : listChildCollections) {
@@ -41,7 +41,7 @@ public class ProyectoExists1 {
 
         }
 
-        //Listar los recursos de una colección
+        //LISTAR LOS RECURSOS DE UNA COLECCIÓN
         String[] listResources = col.listResources();
 
         for (String z : listResources) {
